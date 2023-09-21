@@ -14,13 +14,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-const PORT = 678;
-
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
 
 module.exports = app;
