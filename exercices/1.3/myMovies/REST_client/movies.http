@@ -1,0 +1,15 @@
+@baseUrl = http:localhost:3000
+
+### Create a movie
+POST {{baseUrl}}/movies
+Content-Type: application/json
+
+{
+    "title": "Oppenheimer",
+    "duration": 189,
+    "budget": 5000000,
+    "link": "imdb"
+}
+
+### Read all movies
+GET {{baseUrl}}/movies
