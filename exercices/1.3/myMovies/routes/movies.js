@@ -65,8 +65,8 @@ router.post('/', (req, res) => {
 
     if (!title || !link || !duration || !budget) return res.json('Bad request');
 
-    const lastItemIndex = films?.length !== 0 ? films.length - 1 : undefined;
-    const lastId = lastItemIndex !== undefined ? films[lastItemIndex]?.id : 0;
+    const lastItemIndex = MOVIES?.length !== 0 ? MOVIES.length - 1 : undefined;
+    const lastId = lastItemIndex !== undefined ? MOVIES[lastItemIndex]?.id : 0;
     const nextId = lastId + 1;
 
     const newMovie = { id: nextId, title, link, duration, budget };
