@@ -13,3 +13,6 @@ Content-Type: application/json
 
 ### Read all movies
 GET {{baseUrl}}/movies
+
+### Find Movie by Id 
+GET {{baseUrl}}/movies/3

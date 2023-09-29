@@ -1,0 +1,51 @@
+@baseUrl = http://localhost:3000/movies
+
+### Create a movie
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+    "title": "Oppenheimer",
+    "duration": 189,
+    "budget": 5000000,
+    "link": "imdb"
+}
+
+### Read all movies
+GET {{baseUrl}}
+
+### Find Movie by Id 
+GET {{baseUrl}}/3
+
+### Delete movie by id
+DELETE {{baseUrl}}/2
+
+### Patch
+PATCH {{baseUrl}}/1
+Content-Type: application/json
+
+{
+    "title" : "Scream"
+}
+
+### Put existing
+PUT {{baseUrl}}/1
+Content-Type: application/json
+
+{
+    "title": "Les Visiteurs",
+    "duration": 90,
+    "budget": 800000,
+    "link": "imdb"
+}
+
+### Put non existing
+PUT {{baseUrl}}/19
+Content-Type: application/json
+
+{
+    "title": "Oppenheimer",
+    "duration": 189,
+    "budget": 5000000,
+    "link": "imdb"
+}
