@@ -1,0 +1,5 @@
+[
+  { "id": 1, "title": "Les Visiteurs", "duration": 90, "budget": 800000, "link": "imdb" },
+  { "id": 3, "title": "Jaws", "duration": 93, "budget": 300000, "link": "imdb" },
+  { "id": 4, "title": "Oppenheimer", "link": "imdb", "duration": 189, "budget": 5000000 }
+]
