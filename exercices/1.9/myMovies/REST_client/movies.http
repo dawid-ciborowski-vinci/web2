@@ -15,7 +15,7 @@ Content-Type: application/json
 GET {{baseUrl}}
 
 ### Min dur = 90
-GET {{baseUrl}}/?minimum-duration=
+GET {{baseUrl}}/?minimum-duration=90
 
 ### Find Movie by Id 
 GET {{baseUrl}}/3
