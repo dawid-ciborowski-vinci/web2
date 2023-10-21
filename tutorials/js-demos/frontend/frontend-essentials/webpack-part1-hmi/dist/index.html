@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  style="height: 100%;
+margin: 0;"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizzeria</title>
+    <link rel="icon" href="./img/pizza-svgrepo-com.svg" type="image/svg+xml" />
+  </head>
+  <body
+    style="display: flex;
+  flex-direction: column;
+  background-image : url(./img/pizza.jpg);
+  background-size : cover;
+  height: 100%;
+  margin:0;
+"
+  >
+    <header style="text-align: center;">
+      <h1>We love Pizza</h1>
+    </header>
+    <main
+      style="text-align: center;
+   flex: 1 0 auto;"
+    >
+      <audio id="audioPlayer" controls autoplay>
+        <source
+          src="./sound/Infecticide-11-Pizza-Spinoza.mp3"
+          type="audio/mpeg"
+        />
+        Your browser does not support the audio element.
+      </audio>
+    </main>
+    <footer style="text-align: center;">
+      <h1 style="color: white;">
+        But we also love JS
+      </h1>
+      <img src="./img/js-logo.png" alt="" style="height: 50px;" />
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>

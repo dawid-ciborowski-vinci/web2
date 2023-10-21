@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Site</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <!-- Use of bootstrap to get a responsive design : 
+    for a full viewport height : vh-100    
+    d-flex to create a flexbox container and transform direct children elements into flex items 
+    flex-column to set a vertical direction -->
+  <body class="vh-100 d-flex flex-column">
+    <!-- Header row : dark background, white text -->
+    <header class="bg-dark py-2 px-0 text-center text-white font-weight-bold">
+      <h3 id="headerTitle"></h3>
+    </header>
+
+    <main class="h-100">
+      <!-- container-fluid for a full width container
+    h-100 for a full height element 
+    d-flex to create a flexbox container and transform direct children elements into flex items 
+    flex-column to set a vertical direction
+    flex-grow-1: Fill available space  -->
+      <div class="container-fluid h-100 d-flex flex-grow-1 px-0">
+        <div class="row gx-0">
+          <div class="d-none d-md-block col-md-1 bg-dark"></div>
+          <div id="page" class="col col-md-10 py-3 px-3">
+            <h3 id="pageTitle"></h3>
+            <form action="">
+              <div class="mb-3">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="form-control"
+                  placeholder="Enter your password"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary mb-3" id="btn">
+                Submit
+              </button>
+            </form>
+           
+            <div id="messageBoard">
+              <span id="errorMessage"></span>
+            </div>
+
+          </div>
+          <div class="d-none d-md-block col-md-1 bg-dark"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer row -->
+
+    <footer class="bg-dark px-0 py-2 text-center text-white font-weight-bold">
+      <h3 id="footerText"></h3>
+    </footer>
+
+    <script src="./submit-form.js"></script>
+  </body>
+</html>

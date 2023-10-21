@@ -1,0 +1,38 @@
+{
+  "name": "phaser3-webpack-spa",
+  "version": "1.1.0",
+  "description": "A Phaser 3 Project Template for an SPA",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --config webpack/prod.js ",
+    "start": "webpack-dev-server --config webpack/base.js"
+  },
+  "author": {
+    "name": "e-baron"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "raw-loader": "^3.1.0",
+    "terser-webpack-plugin": "^2.2.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "copy-webpack-plugin": "^6.0.3",
+    "css-loader": "^3.6.0",
+    "jquery": "^3.5.1",
+    "phaser": "^3.20.1",
+    "popper": "^1.0.1",
+    "popper.js": "^1.16.1",
+    "style-loader": "^1.2.1"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "static-file-server",
+  "version": "1.0.0",
+  "description": "Static file server with Node.js",
+  "main": "web-server.js",
+  "dependencies": { 
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node web-server.js"
+  },
+  "author": "e-Baron",
+  "license": "CC-BY-SA-4.0"
+}

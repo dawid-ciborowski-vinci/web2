@@ -1,0 +1,16 @@
+{
+  "name": "static-file-server-with-modules",
+  "version": "1.0.0",
+  "description": "Static file server with Node modules",
+  "main": "node-modules.js",
+  "dependencies": {
+    "mime": "^2.5.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node node-modules.js"
+  },
+  "author": "e-Baron",
+  "license": "CC-BY-SA-4.0"
+}

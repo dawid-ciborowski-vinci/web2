@@ -1,0 +1,19 @@
+{
+  "name": "restful-api-essentials-basic",
+  "description": "RESTful API : gestion de données non persistantes",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "morgan": "~1.9.1"
+  },
+  "author": {
+    "name": "e-baron"
+  },
+  "license": "CC-BY-SA-4.0"
+}

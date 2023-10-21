@@ -1,0 +1,16 @@
+{
+  "name": "frontend-essentials-step-1",
+  "version": "1.0.0",
+  "description": "Migration partielle vers Webpack",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "author": "e-baron",
+  "license": "CC-BY-SA-4.0",
+  "devDependencies": {
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
+  }
+}
